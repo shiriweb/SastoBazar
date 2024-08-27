@@ -3,7 +3,7 @@ import { FiFacebook, FiTwitter, FiInstagram } from 'react-icons/fi';
 
 const Footer = () => {
   return (
-    <footer className='font-poppins p-4 bg-gray-200 text-gray-700'>
+    <footer className='font-poppins p-4 bg-gray-200 text-gray-700 mt-8'>
       <div className='container mx-auto flex flex-col md:flex-row justify-between items-center'>
         <div className='flex flex-col md:flex-row items-center'>
           <a href='/' className='text-sm text-gray-500 hover:text-gray-700 mx-2'>
