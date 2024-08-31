@@ -11,6 +11,18 @@ const TopHeader = () => {
           <span className="text-sm text-gray-700">Customer Support</span>
         </div>
 
+        <div className="flex items-center space-x-2">
+        <a href="#" className="text-sm text-gray-700 hover:text-blue-500">
+      <button className="py-1 px-2 text-sm text-secondary">
+      Sell Your Product   
+      </button>
+      <NavLink to="/himalayan-rewards" className="py-1 px-2 text-sm text-secondary" >
+        Himalayan Rewards
+      </NavLink>
+      </a>
+
+      </div>
+
 
         <div className="flex items-center space-x-2">
           <NavLink to="/sastobazar-login" className="text-sm text-gray-700 hover:text-blue-500">
@@ -18,9 +30,9 @@ const TopHeader = () => {
           </NavLink>
           
           <span className="text-sm text-gray-700">/</span>
-          <a href="#" className="text-sm text-gray-700 hover:text-blue-500">
+          <NavLink to="/sastobazar-register" className="text-sm text-gray-700 hover:text-blue-500">
             Register
-          </a>
+          </NavLink>
         </div>
       </div>
     </>

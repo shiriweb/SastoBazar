@@ -1,41 +1,69 @@
-import React from 'react';
-import { FiFacebook, FiTwitter, FiInstagram } from 'react-icons/fi';
+import React from "react";
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className='font-poppins p-4 bg-gray-200 text-gray-700 mt-8'>
-      <div className='container mx-auto flex flex-col md:flex-row justify-between items-center'>
-        <div className='flex flex-col md:flex-row items-center'>
-          <a href='/' className='text-sm text-gray-500 hover:text-gray-700 mx-2'>
-            Home
-          </a>
-          <a href='/about' className='text-sm text-gray-500 hover:text-gray-700 mx-2'>
-            About Us
-          </a>
-          <a href='/terms' className='text-sm text-gray-500 hover:text-gray-700 mx-2'>
-            Terms and Conditions
-          </a>
-          <a href='/privacy' className='text-sm text-gray-500 hover:text-gray-700 mx-2'>
-            Privacy Policy
-          </a>
+    <footer className="bg-gray-100 text-gray-200 py-10 mt-7">
+      <div className="container mx-auto px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-10">
+          <div className="mb-6 lg:mb-0">
+            <a href="#">
+              <img src="../../src/assets/images/logo.png" alt="Logo" className="h-12 mb-4" />
+            </a>
+            <p className="text-black">
+              We provide you the best items in best price.
+            </p>
+          </div>
+
+          {/* Product Categories */}
+          <div>
+            <h5 className="font-bold mb-3 text-black">Product Categories</h5>
+            <ul>
+              <li><a href="#" className="hover:text-yellow-400">Home</a></li>
+              <li><a href="#" className="hover:text-yellow-400">Services</a></li>
+              <li><a href="#" className="hover:text-yellow-400">About Us</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h5 className="font-bold mb-3 text-black ">Customer Service</h5>
+            <ul>
+              <li><a href="#" className="hover:text-yellow-400">Contact Us</a></li>
+              <li><a href="#" className="hover:text-yellow-400">Returns & Exchanges</a></li>
+              <li><a href="#" className="hover:text-yellow-400">Shipping Information</a></li>
+              <li><a href="#" className="hover:text-yellow-400">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h5 className="font-bold mb-3 text-black">Follow Us</h5>
+            <div className="flex space-x-4">
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-yellow-400">
+                <FaFacebookF size={20} />
+              </a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-yellow-400">
+                <FaTwitter size={20} />
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-yellow-400">
+                <FaInstagram size={20} />
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-yellow-400">
+                <FaLinkedinIn size={20} />
+              </a>
+            </div>
+          </div>
         </div>
-        <div className='flex items-center mt-4 md:mt-0'>
-          <a href='https://www.facebook.com' target='_blank' rel='noopener noreferrer' className='mx-2'>
-            <FiFacebook className='h-6 w-6 text-gray-700 hover:text-blue-600' />
-          </a>
-          <a href='https://www.twitter.com' target='_blank' rel='noopener noreferrer' className='mx-2'>
-            <FiTwitter className='h-6 w-6 text-gray-700 hover:text-blue-400' />
-          </a>
-          <a href='https://www.instagram.com' target='_blank' rel='noopener noreferrer' className='mx-2'>
-            <FiInstagram className='h-6 w-6 text-gray-700 hover:text-pink-500' />
-          </a>
+
+        {/* Newsletter Signup */}
+   
+
+       
+        <div className="text-center text-gray-400">
+          <p>&copy; 2024 Sasto Bazar. All rights reserved.</p>
         </div>
-      </div>
-      <div className='text-center text-sm text-gray-500 mt-4'>
-        &copy; 2024 SastoBazar. All rights reserved.
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;

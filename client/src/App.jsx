@@ -7,6 +7,7 @@ import Banner from "./pages/banner/Banner";
 import TopHeader from "./components/topHeader/TopHeader";
 import Home from "./pages/home/Home";
 import { Login } from "./pages/user/login/Login";
+import { Register } from "./pages/user/register/Register";
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/sastobazar-login" element={<Login />} />
+          <Route path="/sastobazar-register" element={<Register />} />
+
         </Routes>
         <Footer />
       </Router>
