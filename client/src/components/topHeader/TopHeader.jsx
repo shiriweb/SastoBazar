@@ -17,6 +17,7 @@ const TopHeader = (props) => {
         <div className="flex items-center space-x-2">
           <a className="text-sm text-gray-700">{props.title}</a>
           <span className="text-sm text-gray-700">/</span>
+          
           <NavLink
             to="/sastobazar-login"
             className="py-1 px-2 text-sm text-seconds"
