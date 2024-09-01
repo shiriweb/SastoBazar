@@ -15,13 +15,16 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Product Categories */}
           <div>
             <h5 className="font-bold mb-3 text-black">Product Categories</h5>
             <ul>
-              <li><a href="#" className="hover:text-yellow-400">Home</a></li>
-              <li><a href="#" className="hover:text-yellow-400">Services</a></li>
-              <li><a href="#" className="hover:text-yellow-400">About Us</a></li>
+            <link to="/home" className="hover:text-yellow-400">
+              <li>Home</li></link>
+
+              <link to="/aboutus" className="hover:text-yellow-400">
+              <li>Services</li></link>
+              <link to="/about-us-details" className="hover:text-yellow-400">
+              <li>About Us</li></link>
             </ul>
           </div>
 
@@ -54,7 +57,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Newsletter Signup */}
    
 
        

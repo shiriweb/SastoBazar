@@ -6,7 +6,9 @@ export const Register = () => {
     <>
       <div className="flex justify-center items-center  mx-auto w-1/2 ">
         <div className="w-full max-w-md p-8 bg-gray-100">
-          <span className="text-gray-700 mb-6">Please enter your credentials</span>
+          <span className="text-gray-700 mb-6">
+            Please enter your credentials
+          </span>
           <form className="my-3">
             <div className="mb-4">
               <label
@@ -41,20 +43,20 @@ export const Register = () => {
             </div>
 
             <div className="mb-6">
-            <label
-              htmlFor="password"
-              className="block text-sm font-medium text-gray-700 mb-2"
-            >
-              Confirm Password
-            </label>
-            <input
-              type="password"
-              id="password"
-              name="con_password"
-              placeholder="Re-write Password"
-              className="w-full px-4 py-2 border border-gray-300 rounded-md "
-            />
-          </div>
+              <label
+                htmlFor="password"
+                className="block text-sm font-medium text-gray-700 mb-2"
+              >
+                Confirm Password
+              </label>
+              <input
+                type="password"
+                id="password"
+                name="con_password"
+                placeholder="Re-write Password"
+                className="w-full px-4 py-2 border border-gray-300 rounded-md "
+              />
+            </div>
 
             <div className="mb-6">
               <button
@@ -65,7 +67,14 @@ export const Register = () => {
               </button>
             </div>
             <p className="text-center text-gray-700">
-              Already have an account?<NavLink to="/sastobazar-login" className="text-decoration-none text-orange-500  hover:text-orange-700" > Login</NavLink>
+              Already have an account?
+              <NavLink
+                to="/sastobazar-login"
+                className="text-decoration-none text-orange-500  hover:text-orange-700"
+              >
+                {" "}
+                Login
+              </NavLink>
             </p>
           </form>
         </div>

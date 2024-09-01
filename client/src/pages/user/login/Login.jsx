@@ -6,7 +6,9 @@ export const Login = () => {
     <>
       <div className="flex justify-center items-center  mx-auto w-1/2 ">
         <div className="w-full max-w-md bg-gray-100 p-8 ">
-          <span className="text-gray-700 mb-6">Please enter your credentials</span>
+          <span className="text-gray-700 mb-6">
+            Please enter your credentials
+          </span>
           <form className="my-3">
             <div className="mb-4">
               <label
@@ -50,7 +52,13 @@ export const Login = () => {
             </div>
             <p className="text-center text-gray-700">
               Don't have an account?
-              <NavLink to="/sastobazar-register" className="text-decoration-none text-orange-500 hover:text-orange-700" > Register</NavLink>
+              <NavLink
+                to="/sastobazar-register"
+                className="text-decoration-none text-orange-500 hover:text-orange-700"
+              >
+                {" "}
+                Register
+              </NavLink>
             </p>
           </form>
         </div>
