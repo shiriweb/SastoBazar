@@ -8,7 +8,6 @@ const TopHeader = (props) => {
       <div className="font-poppins pt-1 border-b p-2 px-4 flex justify-between items-center">
         <div className="flex items-center space-x-2">
           <FaViber className="text-blue-500" />
-
           <NavLink to="/sastobazar-support" className="text-sm text-gray-700">
             Customer Support
           </NavLink>
@@ -17,13 +16,13 @@ const TopHeader = (props) => {
         <div className="flex items-center space-x-2">
           <a className="text-sm text-gray-700">{props.title}</a>
           <span className="text-sm text-gray-700">/</span>
-          
           <NavLink
             to="/sastobazar-login"
             className="py-1 px-2 text-sm text-seconds"
           >
             Login
           </NavLink>
+
           <span className="text-sm text-gray-700">/</span>
           <NavLink
             to="/sastobazar-Register"

@@ -1,6 +1,7 @@
 import React from "react";
 import CommonPage from "../commonPages/CommonPage";
 import AboutImg from "../../assets/images/aboutus.png";
+import MoreAbout from "./MoreAbout";
 
 const AboutUs = () => {
   return (
@@ -14,6 +15,7 @@ const AboutUs = () => {
         visit="/more-info"
         imageAbout={AboutImg}
       />
+      <MoreAbout />
     </>
   );
 };

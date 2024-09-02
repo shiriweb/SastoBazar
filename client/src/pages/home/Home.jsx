@@ -1,5 +1,6 @@
 import React from "react";
 import Banner from "../banner/Banner";
+import Products from "../product/Products";
 
 const Home = () => {
   return (
@@ -7,6 +8,12 @@ const Home = () => {
       <div className="bannerpage">
         <Banner />
       </div>
+
+      <div>
+      <Products/>
+      
+      </div>
+
     </>
   );
 };

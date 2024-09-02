@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import "./index.css";
@@ -14,6 +14,8 @@ import LearnMore from "./pages/learn-more/LearnMore";
 import AboutUs from "./pages/aboutUs/AboutUs";
 
 function App() {
+  useEffect(() => {}, []);
+
   return (
     <>
       <Router>
@@ -23,10 +25,9 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/sastobazar-login" element={<Login />} />
           <Route path="/sastobazar-register" element={<Register />} />
-          <Route path="*" element={<PageNotFound />}/>
-          <Route path="/about-us" element={<AboutUs/>}/>
-          <Route path="/more-info" element={<LearnMore />}/>
-
+          <Route path="*" element={<PageNotFound />} />
+          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/more-info" element={<LearnMore />} />
         </Routes>
         <Footer />
       </Router>

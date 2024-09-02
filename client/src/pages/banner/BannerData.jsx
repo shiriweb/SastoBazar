@@ -12,7 +12,7 @@ export const items = [
     image: FirstBanner,
   },
   {
-    id:2,
+    id: 2,
     title: "BannerTwo",
     visit: "/",
     image: SecondBanner,

@@ -13,9 +13,9 @@ const CommonPage = (props) => {
               <span className="text-orange-500">{props.subtitle}</span>
             </h2>
 
-            <p className="mb-4 text-gray-200">{props.desc1}</p>
+            <p className="mb-4 text-gray-700">{props.desc1}</p>
             <>
-              <p className="mb-4 text-gray-200">{props.desc2}</p>
+              <p className="mb-4 text-gray-700">{props.desc2}</p>
             </>
             <Link
               to={props.visit}
