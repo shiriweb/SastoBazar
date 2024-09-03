@@ -20,7 +20,7 @@ const Footer = () => {
                 className="h-12 mb-4"
               />
             </a>
-            <p className="text-black">
+            <p className="text-black">cd 
               We provide you the best items in best price.
             </p>
           </div>
