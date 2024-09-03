@@ -80,6 +80,7 @@ export const Login = () => {
                 className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none "
                 value={loginValue.password}
                 onChange={handleChange}
+
               />
             </div>
 
@@ -91,6 +92,7 @@ export const Login = () => {
                 Login
               </button>
             </div>
+
             <p className="text-center text-gray-700">
               Don't have an account?
               <NavLink
